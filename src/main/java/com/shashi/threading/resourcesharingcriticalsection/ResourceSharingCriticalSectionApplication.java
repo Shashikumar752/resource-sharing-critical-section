@@ -57,11 +57,11 @@ public class ResourceSharingCriticalSectionApplication {
 			return item;
 		}
 
-		public void increment() {
+		public synchronized void increment() {
 			this.item++;
 		}
 
-		public void decrement() {
+		public synchronized void decrement() {
 			this.item--;
 		}
 	}
